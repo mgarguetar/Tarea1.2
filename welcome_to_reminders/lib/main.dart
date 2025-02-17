@@ -46,11 +46,16 @@ class _MyHomePageState extends State<MyHomePage> {
        body: Column(
       children: [
         Text(
-          'Welcome to Reminders',
-          style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+          'Welcome to',
+          style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: 45),
+        Text(
+          'Reminders',
+          style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+          textAlign: TextAlign.center,
+        ),
+        SizedBox(height: 16),
         Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -59,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Icon(Icons.timelapse, color: Colors.green),
+                  Icon(Icons.timer_outlined, color: Colors.green),
                   Icon(Icons.flag, color: Colors.green),
                 ],
               ),
@@ -78,22 +83,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: const [
                 Text(
                   'Quick Creation',
-                  style: TextStyle(fontSize: 15, color: Colors.black, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 13, color: Colors.black, fontWeight: FontWeight.bold),
                 ),
                 Text(
                   'Simple type in your list, ask Siri, or add',
-                  style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
                 ),
                 Text(
                   'a reminder from your Calendar app.',
-                  style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
                 ),
                 ],
               ),
             ],
           ),
         ),
-        SizedBox(height: 25),
+        SizedBox(height: 12),
         Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -102,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Icon(Icons.list_alt, color: Colors.deepOrange,size: 35),
+                  Icon(Icons.local_grocery_store, color: Colors.deepOrange,size: 35),
                 ],
               ),
               
@@ -113,25 +118,127 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: const [
                 Text(
                   'Grocery Shopping',
-                  style: TextStyle(fontSize: 15, color: Colors.black, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 13, color: Colors.black, fontWeight: FontWeight.bold),
                 ),
                 Text(
                   'Create a Grocery List that',
-                  style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
                 ),
                 Text(
                   'automatically sorts items you add by',
-                  style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
                 ),
                 Text(
                   'category.',
-                  style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
                 ),
                 ],
               ),
             ],
           ),
-        )
+        ),
+        SizedBox(height: 12),
+        Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Primera columna de iconos
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Icon(Icons.people, color: Color(0xFFE5BE01),size: 35),
+                ],
+              ),
+              
+              SizedBox(width: 20),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                Text(
+                  'Easy Sharing',
+                  style: TextStyle(fontSize: 13, color: Colors.black, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'Colaborate on a list, and even assign',
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
+                ),
+                Text(
+                  'individual tasks.',
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
+                ),
+                ],
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Primera columna de iconos
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Icon(Icons.topic_sharp, color: Colors.blueAccent),
+                  Icon(Icons.topic_sharp, color: Colors.blueAccent),
+                ],
+              ),
+              // Segunda columna de iconos (Send y Camera)
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Icon(Icons.topic_sharp, color: Colors.blueAccent),
+                  Icon(Icons.topic_sharp, color: Colors.blueAccent),
+                ],
+              ),
+              SizedBox(width: 20),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                Text(
+                  'Powerful Organization',
+                  style: TextStyle(fontSize: 13, color: Colors.black, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'Create a new lists to match your needs,',
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
+                ),
+                Text(
+                  'categorize reminders with tags, and',
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
+                ),
+                Text(
+                  'manage reminders around your work,',
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
+                ),
+                Text(
+                  'flow with Smart Lists.',
+                  style: TextStyle(fontSize: 13, color: Colors.blueGrey),
+                ),  
+                ],
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 40),
+
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 80, vertical: 5),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
+                ),
+              ),
+              onPressed: () {},
+              child: Text(
+                "Continue",
+                style: TextStyle(fontSize: 20, color: Colors.white),
+              ),
+            ),
       ],
     ),
   );
