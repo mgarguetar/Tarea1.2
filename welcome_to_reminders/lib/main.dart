@@ -93,6 +93,45 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
+        SizedBox(height: 25),
+        Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Primera columna de iconos
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Icon(Icons.list_alt, color: Colors.deepOrange,size: 35),
+                ],
+              ),
+              
+              SizedBox(width: 20),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                Text(
+                  'Grocery Shopping',
+                  style: TextStyle(fontSize: 15, color: Colors.black, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'Create a Grocery List that',
+                  style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+                ),
+                Text(
+                  'automatically sorts items you add by',
+                  style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+                ),
+                Text(
+                  'category.',
+                  style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+                ),
+                ],
+              ),
+            ],
+          ),
+        )
       ],
     ),
   );
